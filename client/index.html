@@ -14,10 +14,18 @@
     <div id='outerHeaderDiv'>
       <div id='innerHeaderDiv'>
         <a class= 'item' ui-sref="home"><img src="assets/nymexLogo.png"></a> 
-        <a class= 'item' ui-sref="firm">Our Firm</a> 
-        <a class= 'item' ui-sref="team">Our Team</a> 
-        <a class= 'item' ui-sref="practice">Our Practice</a>
-        <a class= 'item' ui-sref="contact">Contact</a>
+        <a class= 'item' ng-show='obj.eng' ui-sref="firm">Our Firm</a> 
+        <a class= 'item' ng-show='!obj.eng' ui-sref="firm">Nuestra Empresa</a> 
+
+        <a class= 'item' ng-show='obj.eng' ui-sref="team">Our Team</a> 
+        <a class= 'item' ng-show='!obj.eng' ui-sref="team">Nuestro equipo</a> 
+
+        <a class= 'item' ng-show='obj.eng' ui-sref="practice">Our Practice</a>
+        <a class= 'item' ng-show='!obj.eng' ui-sref="practice">Nuestra Práctica</a>
+
+        <a class= 'item' ng-show='obj.eng' ui-sref="contact">Contact</a>
+        <a class= 'item' ng-show='!obj.eng' ui-sref="contact">Contacto</a>
+
         <a class= 'enES' ng-show='obj.eng' ng-click='switchToSpanish()'><img src="assets/EN.jpg"></a>
         <a class= 'enES' ng-show='!obj.eng' ng-click='switchToEnglish()'><img src="assets/ES.jpg"></a>
       </div>
