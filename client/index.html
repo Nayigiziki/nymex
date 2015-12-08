@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app='nymexCapitalApp'>
+<head>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./home/home.css">
+  <script src='./lib/jquery/dist/jquery.js'></script>
+  <script src='./lib/angular/angular.min.js'></script>
+  <script src='./lib/angular-ui-router/release/angular-ui-router.min.js'></script>
+  <script src='index.js'></script>
+</head>
+<body ng-controller='nymexController'>
+
+  <nav class='header'>
+    <div id='outerHeaderDiv'>
+      <div id='innerHeaderDiv'>
+        <a class= 'item' ui-sref="home"><img src="assets/nymexLogo.png"></a> 
+        <a class= 'item' ui-sref="firm">Our Firm</a> 
+        <a class= 'item' ui-sref="team">Our Team</a> 
+        <a class= 'item' ui-sref="practice">Our Practice</a>
+        <a class= 'item' ui-sref="contact">Contact</a>
+        <a class= 'enES' ng-show='obj.eng' ng-click='switchToSpanish()'><img src="assets/EN.jpg"></a>
+        <a class= 'enES' ng-show='!obj.eng' ng-click='switchToEnglish()'><img src="assets/ES.jpg"></a>
+      </div>
+    </div>
+  </nav>
+
+  <div ui-view class='pageContent' autoscroll="false"></div>
+</body>
+</html>

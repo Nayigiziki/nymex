@@ -1,0 +1,61 @@
+body {
+  margin : 0px;
+}
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  font-size: 30px;
+  height: 75px;
+  align-items: center;
+  position: fixed;
+  top :0px;
+  width : 100%;
+  background-color: white; 
+  z-index: 5;
+  left : 0px;
+  font-family: 'Adobe Garamond Pro Semibold';
+}
+
+#outerHeaderDiv{
+  width : 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#innerHeaderDiv {
+  width : 100%;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;  
+}
+
+.header .item {
+  color: #000033;
+  text-decoration: none;
+}
+
+.header .item img {
+  height: 55px;
+  width : 110px;
+}
+
+.header .item:hover {
+  color : black;
+  text-decoration: underline;
+  border-bottom: 1px red;
+}
+
+.enES {
+  height: 25px;
+  width : 80px;
+}
+
+.pageContent {
+  display: flex;
+  flex-direction : column;
+  z-index : 0;
+  width: 100%;
+  margin : 75px auto 0 auto;
+}
