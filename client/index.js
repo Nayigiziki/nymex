@@ -78,7 +78,7 @@ var myApp = angular.module('nymexCapitalApp',
     $scope.obj.eng = language.getIsEnglish();    
   }
 
-  $scope.slide = Animations.slideContactPageDown
-  
+  $scope.slide = Animations.slideContactPageDown;
+  $scope.close =  Animations.slideContactPageDown;
 
 }]);
