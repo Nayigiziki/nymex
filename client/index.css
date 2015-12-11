@@ -68,7 +68,7 @@ body {
   width: 100%;
   background-image: url("./footer.jpg");
   background-repeat:no-repeat;
-  background-size:contain;
+  background-size:cover;
   height: 118px;
   margin-top: 4px;
 }
