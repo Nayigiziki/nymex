@@ -51,11 +51,22 @@ var myApp = angular.module('nymexCapitalApp',
     switchToEnglish : switchToEnglish
   }
 })
-.controller('nymexController', ['$scope', 'language', function($scope, language){
+.factory('Animations', function(){
+  var slideContactPageDown = function(){
+      $( "#contact" ).toggle({duration: 150, });
+  }
+
+  return {
+    slideContactPageDown : slideContactPageDown
+  }
+
+})
+.controller('nymexController', ['$scope', 'language', 'Animations', function($scope, language, Animations){
   console.log('what it do');
   $scope.obj = {
     eng : language.getIsEnglish()
   }
+
 
   $scope.switchToSpanish = function(){
     language.switchToSpanish();
@@ -67,6 +78,7 @@ var myApp = angular.module('nymexCapitalApp',
     $scope.obj.eng = language.getIsEnglish();    
   }
 
-
+  $scope.slide = Animations.slideContactPageDown
+  
 
 }]);

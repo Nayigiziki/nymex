@@ -14,24 +14,30 @@
     <div id='outerHeaderDiv'>
       <div id='innerHeaderDiv'>
         <a class= 'item' ui-sref="home"><img src="assets/nymexLogo.png"></a> 
-        <a class= 'item' ng-show='obj.eng' ui-sref="firm">Our Firm</a> 
-        <a class= 'item' ng-show='!obj.eng' ui-sref="firm">Nuestra Empresa</a> 
+        <a class= 'item' ng-show='obj.eng' >Our Firm</a> 
+        <a class= 'item' ng-show='!obj.eng'>Nuestra Empresa</a> 
 
-        <a class= 'item' ng-show='obj.eng' ui-sref="team">Our Team</a> 
-        <a class= 'item' ng-show='!obj.eng' ui-sref="team">Nuestro equipo</a> 
+        <a class= 'item' ng-show='obj.eng'>Our Team</a> 
+        <a class= 'item' ng-show='!obj.eng'>Nuestro equipo</a> 
 
-        <a class= 'item' ng-show='obj.eng' ui-sref="practice">Our Practice</a>
-        <a class= 'item' ng-show='!obj.eng' ui-sref="practice">Nuestra Práctica</a>
+        <a class= 'item' ng-show='obj.eng' >Our Practice</a>
+        <a class= 'item' ng-show='!obj.eng'>Nuestra Práctica</a>
 
-        <a class= 'item' ng-show='obj.eng' ui-sref="contact">Contact</a>
-        <a class= 'item' ng-show='!obj.eng' ui-sref="contact">Contacto</a>
+        <a class= 'item' ng-click='slide()'  ng-show='obj.eng'>Contact</a>
+        <a class= 'item' ng-click='slide()' ng-show='!obj.eng'>Contacto</a>
 
         <a class= 'enES' ng-show='obj.eng' ng-click='switchToSpanish()'><img src="assets/EN.jpg"></a>
         <a class= 'enES' ng-show='!obj.eng' ng-click='switchToEnglish()'><img src="assets/ES.jpg"></a>
       </div>
     </div>
   </nav>
-
+    
+ 
+  <div align='middle' id='contact'></div>
+    
+  
   <div ui-view class='pageContent' autoscroll="false"></div>
+  <div class='footer'>
+  </div>
 </body>
 </html>
