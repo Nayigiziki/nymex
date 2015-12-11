@@ -53,7 +53,7 @@ var myApp = angular.module('nymexCapitalApp',
 })
 .factory('Animations', function(){
   var slideContactPageDown = function(){
-      $( "#contact" ).toggle({duration: 150, });
+      $( "#contact" ).toggle('slide',{direction:'up'}, 400);
   }
 
   return {
