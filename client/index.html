@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="./home/home.css">
+  <link rel="stylesheet" href="./firm/firm.css">
   <script src='./lib/jquery/dist/jquery.js'></script>
   <script src='https://code.jquery.com/ui/1.11.4/jquery-ui.min.js'></script>
   <script src='./lib/angular/angular.min.js'></script>
@@ -15,8 +16,8 @@
     <div id='outerHeaderDiv'>
       <div id='innerHeaderDiv'>
         <a class= 'item' ui-sref="home"><img src="assets/nymexLogo.png"></a> 
-        <a class= 'item' ng-show='obj.eng' >Our Firm</a> 
-        <a class= 'item' ng-show='!obj.eng'>Nuestra Empresa</a> 
+        <a class= 'item' ui-sref="firm" ng-show='obj.eng' >Our Firm</a> 
+        <a class= 'item' ui-sref="firm" ng-show='!obj.eng'>Nuestra Empresa</a> 
 
         <a class= 'item' ng-show='obj.eng'>Our Team</a> 
         <a class= 'item' ng-show='!obj.eng'>Nuestro equipo</a> 

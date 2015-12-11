@@ -1,5 +1,13 @@
-#background {
-  background-image: url("../assets/ny.jpg");
+#backgroundNY {
+  background-image: url("./NY.jpg");
+  width : 100%;
+  color: white;
+  background-repeat:no-repeat;
+  background-size:cover;
+  height: 100%;
+}
+#backgroundMX {
+  background-image: url("./MX.jpg");
   width : 100%;
   color: white;
   background-repeat:no-repeat;
