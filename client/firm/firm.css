@@ -16,3 +16,21 @@
   height: 1052px;
 }
 
+.firmHeaderES{
+  background-image: url("./nuestra-firma.jpg");
+  width : 100%;
+  color: white;
+  background-repeat:no-repeat;
+  background-size:cover;
+  height: 200px;
+}
+
+.firmBodyES {
+  background-image: url("./spanish_firm.jpg");
+  width : 100%;
+  color: white;
+  background-repeat:no-repeat;
+  background-size:cover;
+  height: 1052px;
+}
+
